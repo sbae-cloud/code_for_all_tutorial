@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1000" height="600" fill="#EBF8FF"/>
+    
+    <!-- Abstract caring scene -->
+    <g transform="translate(100, 50)">
+        <!-- Caregiver figure -->
+        <circle cx="300" cy="200" r="80" fill="#4299E1"/>
+        <rect x="270" y="290" width="60" height="120" rx="30" fill="#4299E1"/>
+        <circle cx="300" cy="150" r="40" fill="#2B6CB0"/>
+        
+        <!-- Patient figure -->
+        <circle cx="500" cy="200" r="70" fill="#4299E1"/>
+        <rect x="470" y="290" width="60" height="100" rx="30" fill="#4299E1"/>
+        <circle cx="500" cy="150" r="35" fill="#2B6CB0"/>
+        
+        <!-- Connection/Care symbol -->
+        <path d="M400 180C400 180 350 230 400 280C450 230 400 180 400 180Z" fill="#63B3ED"/>
+        
+        <!-- Supporting elements -->
+        <circle cx="200" cy="400" r="40" fill="#BEE3F8" opacity="0.6"/>
+        <circle cx="600" cy="100" r="50" fill="#BEE3F8" opacity="0.6"/>
+        <circle cx="700" cy="350" r="45" fill="#BEE3F8" opacity="0.6"/>
+    </g>
+    
+    <!-- Decorative elements -->
+    <circle cx="50" cy="50" r="20" fill="#63B3ED" opacity="0.4"/>
+    <circle cx="950" cy="550" r="25" fill="#63B3ED" opacity="0.4"/>
+</svg>
