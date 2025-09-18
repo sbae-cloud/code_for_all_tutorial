@@ -7,6 +7,61 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./webapp/images.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-button {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-button {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-links a {
+                margin: 10px 0;
+            }
+        }
+
+        .en {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header class="hero">
@@ -14,11 +69,15 @@
             <div class="logo">
                 <img src="logo.svg" alt="CareWith Logo" height="40">
             </div>
+            <div class="menu-button" onclick="toggleMobileMenu()">
+                ☰
+            </div>
             <div class="nav-links">
                 <a href="#overview">Overview</a>
                 <a href="#solution">Solution</a>
                 <a href="#target-users">Target Users</a>
                 <a href="#mvp">MVP Features</a>
+                <button onclick="toggleLanguage()">KR/EN</button>
             </div>
         </nav>
         <div class="hero-content">
@@ -140,5 +199,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
