@@ -1,0 +1,23 @@
+{
+  "name": "code_for_all_tutorial",
+  "version": "1.0.0",
+  "description": "- 발달장애 또는 지적장애인을 돌보는 간병인들은 약 복용, 치료 일정, 일상 활동 등 여러 책임을 동시에 관리해야 합니다. 기존 캘린더 앱은 간병 업무에 최적화되어 있지 않아, 여러 보호자와 간병인 사이에서 일정을 관리하는 것이 스트레스가 되고 실수가 발생하기 쉽습니다.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbae-cloud/code_for_all_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbae-cloud/code_for_all_tutorial/issues"
+  },
+  "homepage": "https://github.com/sbae-cloud/code_for_all_tutorial#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
